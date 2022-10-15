@@ -1,0 +1,14 @@
+<h1>Authors no.of Books</h1>
+<table>
+  <thead>
+    <th>Author</th>
+    <th>Books</th>
+  </thead>
+  <% @authors.each do |author| %>
+  <tr>
+    <td><%= author.author %></td>
+    <td><%= author.books %></td>
+    <td><%= link_to "Edit", edit_author_path(author) %></td>
+  </tr>
+  <% end %>
+</table>
